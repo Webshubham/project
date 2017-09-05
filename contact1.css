@@ -1,0 +1,139 @@
+body{
+	background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center  fixed;
+	background-size: cover;
+	min-height: 100%;
+}
+.menu-bar
+{
+	margin: 0;
+	padding: 40px;
+}
+.flex
+{
+	background:#262626;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-family: arial;
+	height: 100vh;
+	background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center  fixed;
+	background-size: cover;
+	
+}
+ h2{
+	font-size: 15px;
+	font-weight: 900;
+}
+ul
+{
+	margin: 15px;
+	padding: -99px;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #000;
+	align-items: center;
+}
+ul li
+{
+	display: inline-block;
+	transform-style: preserve-3d;
+}
+ul li a
+{
+	color: #fff;
+	font-size: 15px;
+	font-family: arial;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+}
+ul li a span
+{
+	display: block;
+	padding: 15px 20px;
+	text-align: right;
+}
+ul li span:before
+{
+	content: attr(title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #f30000;
+	color: #fff;
+	padding: 15px 20px;
+	transform-style: preserve-3d;
+	transition: .5s;
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: top;
+
+}
+ul li a span:hover:before
+{
+	transform: rotateX(0deg) translateY(0px);
+}
+
+
+.copi
+{
+	font-size: 15px;
+	font-weight: 900;
+}	
+.cardbox{
+	perspective: 500px;
+	margin: 150px;
+	height: 150px;
+}
+.card{
+	position: relative;
+	top: -0;
+	left: 0;
+	width: 150px;
+	height: 150px;
+	background: #fff;
+	transform-style: preserve-3d;
+	transition: .5s ease;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+
+}
+.phone{
+	background: #262626;
+}
+.mail{
+	background: #262626;
+}
+.card-front .card-back {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 500px;
+	color: #fff;
+	-webkit-backface-visibility: hidden;
+}
+.card-front{
+	display: flex;
+	font-size: 60px;
+	justify-content: center;
+	text-align: center;
+	}
+
+.card-back{
+	display: flex;
+	font-size: 10px;
+	justify-content: center;
+	text-align: center;
+	}
+	.cardbox:hover .card{
+
+				transform: rotateY(180deg);
+				
+	}
+	.card-back{
+		transform: rotateY(180deg);
+		backface-visibility: hidden;
+	}
+	

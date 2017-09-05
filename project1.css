@@ -1,0 +1,134 @@
+.head
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+	
+}
+.line {
+  border: 1px outset rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  left: 0%;
+}
+.sub
+{
+	position: absolute;
+	top: 56%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: blink;
+}
+
+body{
+		margin: 0;
+	padding: 40px;
+background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center  fixed;	background-size: cover;
+	min-height: 100%;
+	width: 1270px;
+}
+
+.header
+{
+	margin: 15px;
+	padding: -99px;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #000;
+	align-items: center;
+}
+.list
+{
+	display: inline-block;
+	transform-style: preserve-3d;
+}
+.file
+{
+	color: #fff;
+	font-size: 15px;
+	font-family: arial;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+}
+ span
+{
+	display: block;
+	padding: 15px 20px;
+	text-align: right;
+}
+.header .list span:before
+{
+	content: attr(title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #f30000;
+	color: #fff;
+	padding: 15px 20px;
+	transform-style: preserve-3d;
+	transition: .5s;
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: top;
+
+}
+.header .list .file span:hover:before
+{
+	transform: rotateX(0deg) translateY(0px);
+}
+.side{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	margin: 22px;
+	padding: 2px;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%);
+	font-size: 25px;
+	background: transparent;
+	text-decoration: none;
+}
+.eliments
+{
+	margin: 10px;
+	padding: 2px;
+	text-decoration: none;
+}
+ .node{
+	text-decoration: none;
+	transition: .2s ease-in-out;
+	
+}
+ #fa
+{
+	color:#3b5999;
+}
+ #tw{
+	color: #55acee;
+}
+ #ev{
+	color:#410093;
+}
+#go{
+	color:#dd4b39 ;
+}
+ .node:hover
+{
+	font-size: 50px;
+	margin-left:20px;
+}
+
+

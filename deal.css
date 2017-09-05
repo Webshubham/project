@@ -1,0 +1,152 @@
+body{
+	background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center  fixed;
+	background-size: cover;
+	min-height: 100%;
+}
+.menu-bar
+{
+	margin: 0;
+	padding: 40px;
+}
+ul
+{
+	margin: 15px;
+	padding: -99px;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #000;
+	align-items: center;
+}
+ul li
+{
+	display: inline-block;
+	transform-style: preserve-3d;
+}
+ul li a
+{
+	color: #fff;
+	font-size: 15px;
+	font-family: arial;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+}
+ul li a span
+{
+	display: block;
+	padding: 15px 20px;
+	text-align: right;
+}
+ul li span:before
+{
+	content: attr(title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #f30000;
+	color: #fff;
+	padding: 15px 20px;
+	transform-style: preserve-3d;
+	transition: .5s;
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: top;
+
+}
+ul li a span:hover:before
+{
+	transform: rotateX(0deg) translateY(0px);
+}
+.slider{
+	overflow: hidden;
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.slide{
+	width: 20%;
+	float: left;
+}
+ img{
+	width: 100%;
+	float: left;
+}
+ figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slidy infinite;
+}
+@keyframes slidy{
+	0%{
+		left: 0%;
+	}
+	10%{
+		left: 0%;
+	}
+	12%{
+		left: -100%;
+	}
+	22%{
+		left: -100%;
+	}
+	24%{
+		left: -200%;
+	}
+	34%{
+		left: -200%;
+	}
+	36%{
+		left: -300%;
+	}
+	46%{
+		left: -300%;
+	}
+	48%{
+		left: -400%;
+	}
+	58%{
+		left: -400%;
+	}
+	60%{
+		left: -500%;
+
+	}
+	70%{
+		left: -500%;
+	}
+	75%{
+		left: -400%;
+
+	}
+	76%{
+		left: -400%;
+	}
+	81%{
+		left: -300%;
+	}
+	82%{
+		left: -300%;
+	}
+	87%{
+		left: -200%;
+	}
+	88%{
+		left: -200;
+	}
+	93%{
+		left: -100%;
+	}
+	94%{
+		left: -100%;
+	}
+	99%{
+		left: 0%;
+	}
+}

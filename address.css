@@ -1,0 +1,89 @@
+body
+{
+	background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center  fixed;
+	background-size: cover;
+	min-height: 100%;
+}
+.menu-bar
+{
+	margin: 0;
+	padding: 40px;
+}
+.add
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	
+}
+h2
+{
+	display: ruby-base;
+	font-size: 40px;
+}
+h1{
+	font-size: 20px;
+	position: absolute;
+	top: 80%;
+	left: 10%;
+	font-weight: 700px;
+}
+ul
+{
+	margin: 15px;
+	padding: -99px;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #000;
+	align-items: center;
+}
+ul li
+{
+	display: inline-block;
+	transform-style: preserve-3d;
+}
+ul li a
+{
+	color: #fff;
+	font-size: 15px;
+	font-family: arial;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+}
+ul li a span
+{
+	display: block;
+	padding: 15px 20px;
+	text-align: right;
+}
+ul li span:before
+{
+	content: attr(title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #f30000;
+	color: #fff;
+	padding: 15px 20px;
+	transform-style: preserve-3d;
+	transition: .5s;
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: top;
+
+}
+ul li a span:hover:before
+{
+	transform: rotateX(0deg) translateY(0px);
+}
+
+
+

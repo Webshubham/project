@@ -1,0 +1,159 @@
+body
+{
+
+	margin: 0;
+	padding: 40px;
+	background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center  fixed;
+	background-size: cover;
+	min-height: 100%;
+	width: 1270px;
+}
+
+ul
+{
+	margin: 15px;
+	padding: -99px;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #000;
+	align-items: center;
+}ul li
+{
+	display: inline-block;
+	transform-style: preserve-3d;
+}
+ul li a
+{
+	color: #fff;
+	font-size: 15px;
+	font-family: arial;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+}
+ul li a span
+{
+	display: block;
+	padding: 15px 20px;
+	text-align: right;
+}
+ul li span:before
+{
+	content: attr(title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #f30000;
+	color: #fff;
+	padding: 15px 20px;
+	transform-style: preserve-3d;
+	transition: .5s;
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: top;
+
+}
+ul li a span:hover:before
+{
+	transform: rotateX(0deg) translateY(0px);
+}
+.box{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+}
+
+#menu{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 40%;
+	top: 20%;
+}
+#bar{
+	display: block;
+	width: 240px;
+	height: 280px;
+	background: #FFF;
+	position: absolute;
+	box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+	transform-origin: bottom center;
+	transform: rotate(10deg) skew(-30deg);
+	transition: .5s;
+}
+ .cont{
+	display: block;
+	color: #ccc;
+	text-align: center;
+	font-size: 2em;
+	line-height: 280px;
+	background-color: #262626;
+}
+ #bar:nth-child(1)
+{
+	transform: rotate(10deg) skew(-30deg) translate(15px,15px);
+}
+
+ #bar:nth-child(2)
+{
+	transform: rotate(10deg) skew(-30deg) translate(0px,0px);
+}
+
+ #bar:nth-child(3)
+{
+	transform: rotate(10deg) skew(-30deg) translate(-15px,-15px);
+}
+
+#menu:hover #bar:nth-child(1)
+{
+	transform: rotate(5deg) skew(0deg) translate(200px,0);
+}
+
+
+#menu:hover #bar:nth-child(2)
+{
+	transform: rotate(0deg) skew(0deg) translate(0,0);
+}
+
+
+#menu:hover #bar:nth-child(3)
+{
+	transform: rotate(-5deg) skew(0deg) translate(-200px,0);
+}
+ #bar:before
+{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 10px;
+	left: 0;
+	bottom: 0;
+	background: #fc2427;
+	transition: .5s;
+}
+ #bar:after
+{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 10px;
+	left: 0;
+	bottom: 0;
+	background: #fff;
+	transition: .5s;
+}
+ #bar:hover:before
+{
+	left: 50%;
+}
+#bar:hover:after
+{
+	right: 50%;
+}
